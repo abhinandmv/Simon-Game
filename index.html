@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon Memory Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <h1 id="level-title" class="animate__animated animate__fadeInDown">SIMON GAME</h1>
+  <p class="score-display">Level: <span id="level-count">0</span></p>
+  
+  <div class="container animate__animated animate__fadeIn">
+    <div class="row">
+      <div type="button" id="green" class="btn green" data-color="green"></div>
+      <div type="button" id="red" class="btn red" data-color="red"></div>
+    </div>
+    <div class="row">
+      <div type="button" id="yellow" class="btn yellow" data-color="yellow"></div>
+      <div type="button" id="blue" class="btn blue" data-color="blue"></div>
+    </div>
+  </div>
+  
+  <div class="controls">
+    <button class="btn-start" id="start-btn">START GAME</button>
+    
+    <div class="difficulty-select">
+      <select id="difficulty">
+        <option value="normal">Normal Speed</option>
+        <option value="fast">Fast Speed</option>
+        <option value="extreme">Extreme Speed</option>
+      </select>
+    </div>
+    
+    <div class="high-score">High Score: <span id="high-score">0</span></div>
+    
+    <div class="instructions">
+      <p>Watch the pattern of lights and sounds, then repeat it by clicking the same colors in the same order. The pattern gets longer with each round!</p>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="game.js"></script>
+</body>
+
+</html>
